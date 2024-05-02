@@ -1,0 +1,44 @@
+html, body{
+    height: 100%;
+}
+
+.hash-calculator, .hash-text-compare{
+    background: #c1d8f0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content{
+    width: 100%;
+    margin-top: 2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    row-gap: 20px;
+    column-gap: 20px;
+    @media screen and (max-width: 872px) {
+        flex-direction: column;
+        align-content: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.editor-wrapper{
+    background: antiquewhite;
+    aspect-ratio: 8/7;
+    width: 40%;
+    border-radius: 15px;
+    padding: 10px;
+    row-gap: 10px;
+    @media screen and (max-width: 872px) {
+        width: 95%;
+    }
+}
+
+.hash-calc, .text-calc, .text-compare-result, .hash-compare{
+    font-size: 24px;
+}
+
+.editor-title{
+    color: #4663ac
+}

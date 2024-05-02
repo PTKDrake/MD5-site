@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MD5 Hash Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="hash-calculator d-flex w-100 align-items-center flex-column">
+    <h2>Tính toán hash MD5 của file/text</h2>
+    <div class="content d-flex justify-content-evenly flex-wrap">
+        <div class="editor-wrapper d-flex flex-column">
+            <h3 class="editor-title">Dữ liệu vào</h3>
+            <textarea class="editor w-100 flex-grow-1 form-control" id="input-text" aria-label=""></textarea>
+        </div>
+        <div class="d-flex flex-column row-gap-2 align-self-center">
+            <button class="btn btn-info hash-calc">Tính</button>
+            <label class="btn btn-primary text-calc">Nhập từ file<input class="d-none" type="file" id="input-file"
+                                                                       name="input-file"></label>
+        </div>
+        <div class="editor-wrapper d-flex flex-column">
+            <h3 class="editor-title">MD5 hash</h3>
+            <textarea class="editor w-100 flex-grow-1 form-control" id="hash-output" aria-label=""></textarea>
+        </div>
+    </div>
+</div>
+<div class="hash-text-compare d-flex w-100 align-items-center flex-column">
+    <h2>So sánh hash MD5 của hai chuỗi</h2>
+    <div class="content d-flex justify-content-evenly flex-wrap">
+        <div class="editor-wrapper d-flex flex-column">
+            <h3 class="editor-title">Chuỗi thứ 1</h3>
+            <textarea class="editor w-100 flex-grow-1 form-control" id="text-compare-input1" aria-label=""></textarea>
+            <label for="text-compare-output1">Hash:</label>
+            <input class="form-control" id="text-compare-output1">
+        </div>
+        <div class="d-flex flex-column row-gap-2 align-self-center">
+            <button class="btn btn-info hash-compare">So sánh</button>
+            <span id="text-compare-result"></span>
+        </div>
+        <div class="editor-wrapper d-flex flex-column">
+            <h3 class="editor-title">Chuỗi thứ 2</h3>
+            <textarea class="editor w-100 flex-grow-1 form-control" id="text-compare-input2" aria-label=""></textarea>
+            <label for="text-compare-output2">Hash:</label>
+            <input class="form-control" id="text-compare-output2">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
